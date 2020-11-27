@@ -1,6 +1,6 @@
 {
   "name": "discord-inv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get more information about an discord invite link!",
   "main": "./index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/SCDerox/discord-inv.git"
   },
-  "license": "Apache-2.0",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/SCNetwork/discord-inv/issues"
   },
