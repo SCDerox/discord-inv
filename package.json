@@ -1,0 +1,31 @@
+{
+  "name": "discord-inv",
+  "version": "1.0.2",
+  "description": "Get more information about an discord invite link!",
+  "main": "./index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "@aero/centra": "^1.0.6"
+  },
+  "keywords": [
+    "discord",
+    "discord-invite",
+    "discordapp",
+    "api"
+  ],
+  "maintainers": [
+    "SCDerox <mail@scderox.de>"
+  ],
+  "author": "SCDerox <mail@scderox.de>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SCDerox/discord-inv.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SCNetwork/discord-inv/issues"
+  },
+  "homepage": "https://github.com/SCNetwork/discord-inv#readme"
+}
