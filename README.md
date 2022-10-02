@@ -1,13 +1,15 @@
 # discord-inv
 
 <p align="center"><a href="https://nodei.co/npm/discord-inv/"><img alt="npm package stats" src="https://nodei.co/npm/discord-inv.png"></a></p>
+<p align="center"><a href="https://github.com/scderox/discord-inv?sponsor=1">&hearts; Sponsor</a> or <a href="https://github.com/SCDerox/discord-inv">★ Star</a></p>
 
+# Features
+* New: TypeScript support
 * NPM package that gets information about an invite from the discord api
 * Useful for websites where users can input their invite-links
 * Useful for bots to detect invites which are not for this guild
 * Supports the Promise-API, so you can use .then, .catch and all the other stuff 😉
 
-Check out or website [discordinvite.info](https://discordinvite.info).
 
 # Install from [NPM](https://www.npmjs.com/package/discord-inv)
 
@@ -78,4 +80,4 @@ Feel free to create any issues and PRs in our [github repository](https://github
 
 
 
-© Simon Csaba, 2020-2021 | mail[at]scderox.de
+© Simon Csaba, 2020-2022 | mail[at]scderox.de
