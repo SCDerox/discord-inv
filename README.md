@@ -130,6 +130,11 @@ Invite {
 */
 ```
 
+# Migration from v1 to v2
+
+Well, the whole module got reworked in v2, so bascially everything changes. We advise you to either continue using v1 or
+re-implementing all the parts using discord-inv.
+
 # Contributing
 
 Feel free to create any issues and PRs in our [github repository](https://github.com/SCDerox/discord-inv) if you want to
