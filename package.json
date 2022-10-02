@@ -1,19 +1,35 @@
 {
   "name": "discord-inv",
-  "version": "1.1.0",
-  "description": "Get more information about an discord invite link!",
-  "main": "./index.js",
+  "version": "2.0.0",
+  "description": "Get more information about a discord invitation link!",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "node test/test.js"
   },
   "dependencies": {
-    "@aero/centra": "^1.0.6"
+    "centra": "2.5.0",
+    "discord-api-types": "^0.37.11"
+  },
+  "devDependencies": {
+    "@types/centra": "2.2.0"
   },
   "keywords": [
     "discord",
     "discord-invite",
     "discordapp",
-    "api"
+    "api",
+    "discord-inv",
+    "discord-api",
+    "discord.js"
+  ],
+  "funding": [
+    "https://github.com/scderox/discord-inv?sponsor=1",
+    "https://paypal.me/therealscderox",
+    "https://bunq.me/scderox"
   ],
   "maintainers": [
     "SCDerox <mail@scderox.de>"
@@ -26,6 +42,5 @@
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/SCDerox/discord-inv/issues"
-  },
-  "homepage": "https://discordinvite.info"
+  }
 }
