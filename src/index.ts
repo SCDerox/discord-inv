@@ -1,6 +1,7 @@
 import {InviteFetchError} from "./InviteFetchError";
 import {Snowflake} from "discord-api-types/globals";
 import {Invite} from "./Invite";
+
 const centra = require('centra')
 
 interface InviteData {
@@ -34,7 +35,7 @@ export function getInviteDataFromURL(inviteURL: string) {
  * Extracts data from an invite url and queries the invite from the Discord API
  * @param {string} inviteURL Discord-Invite-URL
  * @param {boolean} withCounts `approximate_member_count` and `approximate_presence_count` will only be set, if this is true
- * @returns {Invite} Queried invite
+ * @returns {Promise<Invite>} Queried invite
  */
 export async function getInviteFromURL(inviteURL: string, withCounts: boolean = false) {
     const inviteData = getInviteDataFromURL(inviteURL);
@@ -46,7 +47,7 @@ export async function getInviteFromURL(inviteURL: string, withCounts: boolean = 
  * @param {string} code Code of the invite to query
  * @param {boolean} withCounts `approximate_member_count` and `approximate_presence_count` will only be set, if this is true
  * @param {Snowflake} eventID Snowflake of an event associated with the invite. `guild_scheduled_event` will only be set, if this is valid
- * @return {Invite} Fetched invite
+ * @return {Promise<Invite>} Fetched invite
  */
 export async function getInvite(code: string, withCounts: boolean = false, eventID?: Snowflake) {
     const res = await centra(`https://discord.com/api/v8/invites/${code}?with_counts=${withCounts}${eventID ? `&guild_scheduled_event_id=${eventID}` : ''}`, 'GET').send();
